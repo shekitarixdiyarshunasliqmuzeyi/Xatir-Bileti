@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xatirə Biletiniz</title>
+    <link rel="icon" type="image/png" href="MuzeyLogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header> 
+        <img src="MuzeyLogo.png" alt="Logo" class="logo">
+        <h3>Şəki Tarix-Diyarşünaslıq Muzeyi</h3>
+    </header>
+    <main>   
+        <h1><br><br>Xatirə Biletiniz Burada</h1>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Ad Soyad Daxil Edin" id="name" minlength="3" maxlength="25">
+        <button id="submitBtn">Biletinizi Alın</button>
+    </main>
+    <iframe src="" id="mypdf" height="500px" width="500px" frameborder="0"></iframe>
+    <footer>
+        <p>&copy; 2024 Şəki Tarix-Diyarşünaslıq Muzeyi. Bütün Hüquqları Qorunur.</p>
+    </footer>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NSWYTQK45"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'G-9NSWYTQK45');
+    </script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        let ticketCount = 0;
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            alert("Xatirə Biletiniz Endirildi! Təşəkkürlər !");
+        });
+    </script>
+
+</body>
+</html>
